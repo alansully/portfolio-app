@@ -1,34 +1,51 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import Link from "gatsby-link"
 import "./Header.css"
+import Pdf from "../Resume_2019.pdf"
 
-const Header = ({ siteTitle }) => (
-  <header
-  // style={{
-  //   position: `absolute`,
-  //   width: `100%`,
-  // }}
-  >
-    <div className="HeaderGroup">
-      <Link to="/">
-        <img src={require("../images/myLogo.svg")} width="70" />
-      </Link>
-      <div class="menu">
-        <Link to="/courses">Résumé</Link>
-        <span></span>
-        <Link to="/downloads">Contact</Link>
+class Header extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      hasScrolled: false,
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll)
+  }
+
+  handleScroll = event => {
+    const scrollTop = window.pageYOffset
+
+    if (scrollTop > 100) {
+      this.setState({ hasScrolled: true })
+    } else {
+      this.setState({ hasScrolled: false })
+    }
+  }
+
+  render() {
+    return (
+      <div
+        className={this.state.hasScrolled ? "Header HeaderScrolled" : "Header"}
+      >
+        <div className="HeaderGroup">
+          <Link to="/">
+            <img src={require("../images/myLogo3.svg")} width="60" />
+          </Link>
+          <div class="menu">
+            <a href={Pdf} target="_blank">
+              Résumé
+            </a>
+            <span></span>
+            <Link to="/downloads">Contact</Link>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+    )
+  }
 }
 
 export default Header

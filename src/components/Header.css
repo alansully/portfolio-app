@@ -1,8 +1,15 @@
-header {
+.Header {
   position: fixed;
   width: 100%;
   padding: 50px 0;
   z-index: 100;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.HeaderScrolled {
+  background: rgba(0, 4, 7, 0.5);
+  padding: 10px 0;
+  backdrop-filter: blur(20px);
 }
 
 .HeaderGroup {
@@ -23,7 +30,7 @@ header {
 }
 
 .menu a {
-  color: #27303b;
+  color: #fff;
   font-size: 16px;
   font-weight: 400;
 }
@@ -34,7 +41,7 @@ header {
 }
 
 @media (max-width: 640px) {
-  header {
+  .header {
     padding: 15px 0;
   }
 

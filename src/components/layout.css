@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap");
 
 body {
   font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -10,14 +11,26 @@ body {
 }
 
 a {
-  color: #1d7cff;
-  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
   text-decoration: none;
 }
 
+.Hero a {
+  font-family: "Rubik", serif;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  text-decoration: none;
+  /* text-decoration-line: underline;
+  text-decoration-style: solid; */
+}
+
 .Hero {
-  height: 920px;
-  background: url("../images/wallpaper5.jpg");
+  position: relative;
+  height: 700px;
+  /* background: url("../images/duotone2.png"); */
+  background-color: royalblue;
+  background-image: linear-gradient(royalblue, #2257c9);
   background-size: cover;
   background-position: center;
 }
@@ -25,7 +38,7 @@ a {
 .HeroGroup {
   max-width: 920px;
   margin: 0 auto;
-  padding: 300px 50px 150px;
+  padding: 250px 50px 150px;
   text-align: Left;
 }
 
@@ -34,7 +47,7 @@ a {
   line-height: 40px;
   font-size: 30px;
   font-weight: 400;
-  color: #27303b;
+  color: #fff;
   animation: HeroAnimation;
   animation-duration: 3s;
   animation-delay: 0.1s;
@@ -46,9 +59,10 @@ a {
 .Hero span {
   font-size: 23px;
   font-weight: 1;
-  margin-top: 13px;
+  margin-top: 18px;
   display: block;
-  color: #27303b;
+  /* color: #27303b; */
+  color: rgba(220, 220, 220, 0.7);
   animation: HeroAnimation;
   animation-duration: 3s;
   animation-delay: 0.2s;
@@ -80,4 +94,16 @@ a {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+.Hero svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.companies {
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0;
 }
