@@ -57,7 +57,7 @@ const IndexPage = () => (
     <Section
       // logo={require("../images/logo-react.png")}
       title="Bringing my ideas to life"
-      text="In my spare time I like to code. This allows me to explore ideas beyond static Sketch files or basic Framer animations. While also giving me the oppertunity to have more constuctive conversations with development teams."
+      text="In my spare time I like to code. This allows me to explore ideas beyond static Sketch files or basic Framer animations, while also giving me the oppertunity to have more constuctive conversations with development teams."
       image={require("../images/coding_logos.svg")}
     />
   </Layout>
