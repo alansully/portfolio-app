@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import "./Header.css"
-import Pdf from "../Resume_2019.pdf"
+import Pdf from "../Resume.pdf"
 
 class Header extends React.Component {
   constructor(props) {

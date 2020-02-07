@@ -38,19 +38,27 @@ const IndexPage = () => (
     <div className="Cards">
       {/* <h2>11 courses, more coming</h2> */}
       <div className="CardGroup">
-        <Card title=" " text=" " image={require("../images/pf_item1.png")} />
-        <Card title=" " text=" " image={require("../images/pf_item2.png")} />
-        <Card title=" " text=" " image={require("../images/pf_item3.png")} />
-        <Card title=" " text=" " image={require("../images/pf_item4.png")} />
+        <Link to="/page-2">
+          <Card title=" " text=" " image={require("../images/pf_item1.png")} />
+        </Link>
+        <Link to="/page-2">
+          <Card title=" " text=" " image={require("../images/pf_item2.png")} />
+        </Link>
+        <Link to="/page-2">
+          <Card title=" " text=" " image={require("../images/pf_item3.png")} />
+        </Link>
+        <Link to="/page-2">
+          <Card title=" " text=" " image={require("../images/pf_item4.png")} />
+        </Link>
       </div>
       <img className="companies" src={require("../images/companies.svg")} />
     </div>
 
     <Section
-      image={require("../images/wallpaper2.jpg")}
-      logo={require("../images/logo-react.png")}
-      title="Bringing ideas to life"
-      text="In my spare time I like to code."
+      // logo={require("../images/logo-react.png")}
+      title="Bringing my ideas to life"
+      text="In my spare time I like to code. This allows me to explore ideas beyond static Sketch files or basic Framer animations. While also giving me the oppertunity to have more constuctive conversations with development teams."
+      image={require("../images/coding_logos.svg")}
     />
   </Layout>
 )

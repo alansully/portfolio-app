@@ -27,11 +27,10 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
+      {/* <footer>
+        © {new Date().getFullYear()}, Built by Alan O'Sullivan
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      </footer> */}
     </>
   )
 }

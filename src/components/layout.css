@@ -30,7 +30,7 @@ a {
   height: 700px;
   /* background: url("../images/duotone2.png"); */
   background-color: royalblue;
-  background-image: linear-gradient(royalblue, #2257c9);
+  background-image: linear-gradient(royalblue, #103ea0);
   background-size: cover;
   background-position: center;
 }
@@ -71,6 +71,18 @@ a {
   opacity: 0;
 }
 
+.Hero svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.companies {
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
 @media (max-width: 640px) {
   .HeroGroup {
     padding: 220px 50px;
@@ -85,6 +97,13 @@ a {
   }
 }
 
+@media (max-width: 940px) {
+  .companies {
+    width: 80%;
+    display: block;
+  }
+}
+
 @keyframes HeroAnimation {
   0% {
     opacity: 0;
@@ -94,16 +113,4 @@ a {
     opacity: 1;
     transform: translateY(0px);
   }
-}
-
-.Hero svg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.companies {
-  width: 100%;
-  margin: 0 auto;
-  padding: 80px 0;
 }
