@@ -16,7 +16,7 @@ const IndexPage = () => (
           <h1>
             I'm Alan, a product designer. <br />I enjoy creating user-centric,
             delightful experiences. 
-            <br /> Currently working at UserTestingnpm install.
+            <br /> Currently working at UserTestingnpm installnpm install react react-dom.
             <br />
           </h1>
           <span>
