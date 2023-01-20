@@ -40,7 +40,10 @@ class Header extends React.Component {
               Résumé
             </a>
             <span></span>
-            <Link to="/downloads">Contact</Link>
+            <a href="mailto:alansully@gmail.com" target="_top">
+              Contact
+            </a>
+            {/* <Link to=""></Link> */}
           </div>
         </div>
       </div>

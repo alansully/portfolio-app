@@ -16,7 +16,7 @@ const IndexPage = () => (
           <h1>
             I'm Alan, a product designer. <br />I enjoy creating user-centric,
             delightful experiences.
-            <br /> Currently working in Vancouver, BC.
+            <br /> Currently working at UserTesting.
             <br />
           </h1>
           <span>
@@ -39,16 +39,19 @@ const IndexPage = () => (
       {/* <h2>11 courses, more coming</h2> */}
       <div className="CardGroup">
         <Link to="/page-2">
+          <Card title=" " text=" " image={require("../images/pf_item5.png")} />
+        </Link>
+        <Link to="/page-2">
           <Card title=" " text=" " image={require("../images/pf_item1.png")} />
         </Link>
         <Link to="/page-2">
-          <Card title=" " text=" " image={require("../images/pf_item2.png")} />
+          <Card title=" " text=" " image={require("../images/pf_item4.png")} />
         </Link>
         <Link to="/page-2">
           <Card title=" " text=" " image={require("../images/pf_item3.png")} />
         </Link>
         <Link to="/page-2">
-          <Card title=" " text=" " image={require("../images/pf_item4.png")} />
+          <Card title=" " text=" " image={require("../images/pf_item2.png")} />
         </Link>
       </div>
       <img className="companies" src={require("../images/companies.svg")} />
@@ -57,7 +60,7 @@ const IndexPage = () => (
     <Section
       // logo={require("../images/logo-react.png")}
       title="Bringing my ideas to life"
-      text="In my spare time I like to code. This allows me to explore ideas beyond static Sketch files or basic Framer animations, while also giving me the oppertunity to have more constuctive conversations with development teams."
+      text="In my spare time I like to code. This allows me to explore ideas beyond static Sketch files or basic Framer animations, while also giving me the opportunity to have more constructive conversations with development teams."
       image={require("../images/coding_logos.svg")}
     />
   </Layout>
