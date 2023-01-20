@@ -15,8 +15,8 @@ const IndexPage = () => (
         <div className="HeroGroup">
           <h1>
             I'm Alan, a product designer. <br />I enjoy creating user-centric,
-            delightful experiences.
-            <br /> Currently working in Canada.
+            delightful experiences. 
+            <br /> Currently working at UserTesting.
             <br />
           </h1>
           <span>
